@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tumblin</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+}
+
+header{
+background:#181818;
+padding:15px;
+font-size:28px;
+font-weight:bold;
+display:flex;
+align-items:center;
+}
+
+.search{
+margin-left:40px;
+}
+
+.search input{
+padding:8px;
+width:400px;
+background:#111;
+border:1px solid #333;
+color:white;
+border-radius:6px;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:200px;
+background:#111;
+height:100vh;
+padding:20px;
+}
+
+.sidebar div{
+margin-bottom:18px;
+cursor:pointer;
+color:#ccc;
+}
+
+.sidebar div:hover{
+color:white;
+}
+
+.main{
+flex:1;
+padding:25px;
+}
+
+.videos{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.video{
+background:#1a1a1a;
+padding:10px;
+border-radius:8px;
+}
+
+.thumbnail{
+width:100%;
+height:150px;
+background:#333;
+border-radius:6px;
+}
+
+.title{
+margin-top:8px;
+font-weight:bold;
+}
+
+.meta{
+font-size:12px;
+color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+Tumblin
+<div class="search">
+<input placeholder="Search">
+</div>
+</header>
+
+<div class="container">
+
+<div class="sidebar">
+<div>Home</div>
+<div>Explore</div>
+<div>Subscriptions</div>
+<div>Library</div>
+</div>
+
+<div class="main">
+
+<div class="videos">
+
+<div class="video">
+<div class="thumbnail"></div>
+<div class="title">Video Title</div>
+<div class="meta">Channel • 120K views</div>
+</div>
+
+<div class="video">
+<div class="thumbnail"></div>
+<div class="title">Video Title</div>
+<div class="meta">Channel • 20K views</div>
+</div>
+
+<div class="video">
+<div class="thumbnail"></div>
+<div class="title">Video Title</div>
+<div class="meta">Channel • 5K views</div>
+</div>
+
+<div class="video">
+<div class="thumbnail"></div>
+<div class="title">Video Title</div>
+<div class="meta">Channel • 1M views</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
